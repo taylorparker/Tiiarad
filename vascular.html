@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tiiarad | Vascular IR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mobile.min.js"></script>
+</head>
+<body>
+<script>
+$(function() {
+  var header = $(".menu");
+
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll >= 100) {
+          header.addClass("scrolled");
+      } else {
+          header.removeClass("scrolled");
+      }
+  });
+
+});
+</script>
+<div class="container-fluid no-padding"><!--== Starts Container-fluid==-->
+  <div class="vascular-header"><!--== Starts Header ==-->
+    <div class="tint"></div>
+
+    <div class="row menu"><!--== Starts Desktop Menu ==-->
+      <div class="col-md-2"><!--== Starts Desktop Menu Logo==-->
+        <div class="logo-holder">
+          <a href="index.html"><img class="img-logo" src="img/logo.png" alt="Tennessee Interventional and Imaging Associates"></a>
+        </div>
+      </div><!--== Ends Desktop Menu Logo==-->
+      <div class="col-md-10"><!--== Starts Desktop Menu Links ==-->
+        <div class="nav-menu">
+          <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pay.html">Pay Your Bill</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="services.html">Services and Procedures</a>
+              <ul class="dropdown">
+                <li><a href="di.html">Diagnostic Imaging</a>
+                  <ul class="sub-dropdown">
+                    <li><a href="bone-density.html">Bone Densitometry</a></li>
+                    <li><a href="ct.html">CT Scan</a></li>
+                    <li><a href="mri.html">MRI</a></li>
+                    <li><a href="nuclear-medicine.html">Nuclear Medicine</a></li>
+                    <li><a href="pet-ct.html">Pet/CT</a></li>
+                    <li><a href="ultrasound.html">Ultrasound</a></li>
+                    <li><a href="breast-imaging.html">Breast Imaging</a></li>
+                    <li><a href="pediatric-radiology.html">Pediatric Radiology</a></li>
+                    <li><a href="other-services.html">Other Exams and Services</a></li>
+                  </ul>
+                </li>
+                <li><a href="ir.html">Interventional Radiology</a>
+                  <ul class="sub-dropdown">
+                    <li><a href="neuro.html">Neurointerventional Radiology</a></li>
+                    <li><a href="vascular.html">Vascular</a></li>
+                    <li><a href="gibiliary.html">GI/Biliary</a></li>
+                    <li><a href="renal.html">Renal</a></li>
+                    <li><a href="oncology.html">Interventional Radiology Oncology</a></li>
+                    <li><a href="general-radiology.html">General Interventional Radiology</a></li>
+                    <li><a href="embolization.html">Uterine Fibroid Embolization</a></li>
+                  </ul>
+                </li>
+                <li><a href="professional-services.html">Professional Services</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About Us</a>
+              <ul class="about-dropdown">
+                <li><a href="team.html">Meet The Team</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div><!--== Ends Desktop Menu Links ==-->
+    </div><!--== Ends Desktop Menu ==-->
+
+    <div id="mobile-nav"><!--== Starts Mobile Menu ==-->
+      <div class="logo"><a href="index.html"><img class="mobile-img-logo" src="img/mobile-logo.png" alt="Tennessee Interventional and Imaging Associates"></a></div>
+        <div class="menu-button">
+          <div class="icon">
+            <div class="menu-icon menu-icon-3">
+              <span class="bar bar-1"></span>
+              <span class="bar bar-2"></span>
+              <span class="bar bar-3"></span>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pay.html">Pay Your Bill</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li class="parent">
+              <a href="services.html">Services and Procedures</a>
+              <ul>
+                  <li class="parent">
+                      <a href="di.html">Diagnostic Imaging</a>
+                      <ul>
+                          <li><a href="bone-density.html">Bone Densitometry</a></li>
+                          <li><a href="ct.html">CT Scan</a></li>
+                          <li><a href="mri.html">MRI</a></li>
+                          <li><a href="nuclear-medicine.html">Nuclear Medicine</a></li>
+                          <li><a href="pet-ct.html">Pet/CT</a></li>
+                          <li><a href="ultrasound.html">Ultrasound</a></li>
+                          <li><a href="breast-imaging.html">Breast Imaging</a></li>
+                          <li><a href="pediatric-radiology.html">Pediatric Radiology</a></li>
+                          <li><a href="other-services.html">Other Exams and Services</a></li>
+                      </ul>
+                  </li>
+                  <li class="parent">
+                    <a href="ir.html">Interventional Radiology</a>
+                        <ul>
+                          <li><a href="neuro.html">Neurointerventional Radiology</a></li>
+                          <li><a href="vascular.html">Vascular</a></li>
+                          <li><a href="gibiliary.html">GI/Biliary</a></li>
+                          <li><a href="renal.html">Renal</a></li>
+                          <li><a href="oncology.html">Interventional Radiology Oncology</a></li>
+                          <li><a href="general-radiology.html">General Interventional Radiology</a></li>
+                          <li><a href="embolization.html">Uterine Fibroid Embolization</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="professional-services.html">Professional Services</a></li>
+                </ul>
+            </li>
+            <li class="parent">
+                <a href="about.html">About Us</a>
+                <ul>
+                    <li><a href="team.html">Meet The Team</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div><!--== Ends Mobile Menu ==-->
+
+    <div class="banner-title">
+      <h1 class="banner-text">Vascular Interventional Radiology</h1>
+    </div>
+  </div><!--== Ends Header ==-->
+
+  <div class="density-content"><!--== Start Vascular Content ==-->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="bone-title-holder">
+          <h1 class="bone-title-text">Vascular Interventional Radiology</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 vascular-description-holder">
+        <p class="bone-description-text">Your vascular system, also called the circulatory system,  is made up of vessels that carry blood and lymph through the body.</p>
+        <p class="bone-description-text">Vascular interventional radiology uses minimally invasive techniques with catheters, needles, and other devices, which are guided through these vessels to the treatment site.</p>
+        <p class="bone-description-text">View our <a href="vascular-procedures.html">Vascular Interventional Radiology Procedures</a> page to learn more!</p>
+        <div class="vascular-system-text">
+          <h2 class="vascular-text font-weight-bold left">The vessels of the blood circulatory system are:</h2>
+        </div>
+        <div class="vascular-holder">
+          <p class="vascular-text">Arteries: Blood vessels that carry oxygenated blood away from the heart to the body. </p>
+          <p class="vascular-text">Veins: Blood vessels that carry blood from the body back into the heart. </p>
+          <p class="vascular-text">Capillaries: Tiny blood vessels between arteries and veins that distribute oxygen-rich blood to the body.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row top bottom">
+        <div class="col-md-12 elements">
+          <a href="vascular-procedures.html">
+            <i class="fas fa-stethoscope blue"></i>
+            <h1 class="element-title">Vascular IR Procedures</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="vascular-hr">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="vascular-title-holder">
+          <p class="vascular-title-text">Vascular Interventional Radiology Procedures</p>
+        </div>
+        <div class="vascular-holder-left">
+          <p class="vascular-text">Angiography/Venography - One of the most common reasons for angiograms is to see if there is a blockage or narrowing in a blood vessel that may interfere with the normal flow of blood through the body. In many cases, the interventional radiologist can treat a blocked blood vessel without surgery at the same time the angiogram is performed. Interventional radiologists treat blockages with techniques called angioplasty and thrombolysis.</p>
+          <p class="vascular-text">View our <a href="vascular-procedures.html">Vascular Interventional Radiology Procedures</a> page to learn more!</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="vascular-hr">
+
+    <div class="row bottom">
+      <div class="col-lg-4 col-md-12 vascular-yt-video-left">
+        <iframe class="vascular-yt-video" src="https://www.youtube.com/embed/cdSf5GOyJdw" allowfullscreen></iframe>
+      </div>
+      <div class="col-lg-8 col-md-12">
+        <div class="vascular-title-holder-right">
+          <p class="vascular-title-text">Angioplasty/Stent</p>
+        </div>
+        <div class="vascular-holder-right">
+          <p class="vascular-text">Angioplasty is a procedure to open narrowed or blocked blood vessels that supply blood to the heart. These blood vessels are called the coronary arteries. A coronary artery stent is a small, metal mesh tube that expands inside a coronary artery. A stent is often placed during or immediately after angioplasty. It helps prevent the artery from closing up again. A drug-eluting stent has medicine embedded in it that helps prevent the artery from closing in the long term.</p>
+        </div>
+      </div>
+    </div>
+
+  <hr class="vascular-hr">
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="vascular-title-holder">
+          <p class="vascular-title-text">Arteriovenous malformations (AVM) Embolization</p>
+        </div>
+        <div class="vascular-holder-left">
+          <p class="vascular-text">AVMs are defects in your vascular system. The vascular system includes arteries, veins, and capillaries. Arteries carry blood away from the heart to other organs; veins carry blood back to the heart. Capillaries connect the arteries and veins. An AVM is a snarled tangle of arteries and veins. They are connected to each other, with no capillaries. That interferes with the blood circulation in an organ.  In Embolization procedures, physicians use image guidance to fill AVMs with liquid embolic agents (similar to fast-sealing glue), thereby treating the presenting symptoms, and preventing new ones.</p>
+        </div>
+      </div>
+      <div class="col-md-4 vascular-img-holder">
+        <img src="img/vascular/vascular1.jpg" alt="Photo of a brain">
+      </div>
+    </div>
+
+    <hr class="vascular-hr">
+
+    <div class="row bottom">
+      <div class="col-md-4 vascular-img-holder">
+        <img class="img-vascular" src="img/vascular/vascular2.jpg" alt="Photo inferior vena cava">
+      </div>
+      <div class="col-md-8">
+        <div class="vascular-title-holder-right">
+          <p class="vascular-title-text">IVC filter placement</p>
+        </div>
+        <div class="vascular-holder-right">
+          <p class="vascular-text">An IVC filter traps large clot fragments and prevents them from traveling through the vena cava vein to the heart and lungs, where they could cause severe complications or even death.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr class="vascular-hr">
+
+
+    <div class="row bottom">
+      <div class="col-md-8">
+        <div class="vascular-title-holder">
+          <p class="vascular-title-text">Endovenous Laser Ablation</p>
+        </div>
+        <div class="vascular-holder-left">
+          <p class="vascular-text">Endovenous laser ablation is an image-guided procedure that uses heat generated by radiofrequency or laser energy to seal off faulty vessels, diverting blood flow immediately to nearby healthy veins.</p>
+        </div>
+      </div>
+      <div class="col-md-4 vascular-img-holder">
+        <img src="img/vascular/vascular3.jpg" alt="Photo of knee veins">
+      </div>
+    </div>
+
+
+    <hr class="vascular-hr">
+
+    <div class="row bottom">
+      <div class="col-md-4 vascular-img-holder">
+        <img class="img-vascular" src="img/vascular/vascular4.jpg" alt="Photo of PICC line near the heart.">
+      </div>
+      <div class="col-md-8">
+        <div class="vascular-title-holder-right">
+          <p class="vascular-title-text">PICC</p>
+        </div>
+        <div class="vascular-holder-right">
+          <p class="vascular-text">A <a href="https://www.radiologyinfo.org/en/glossary/glossary1.cfm?gid=728" target="_blank">peripherally inserted central catheter</a> (PICC) is a long catheter that extends from an arm or leg vein into the largest vein (<a href="https://www.radiologyinfo.org/en/glossary/glossary1.cfm?gid=345" target="_blank">superior vena cava</a> or <a href="https://www.radiologyinfo.org/en/glossary/glossary1.cfm?gid=768" target="_blank">inferior vena cava</a> ) near the heart and typically provides central IV access for several weeks, but may remain in place for several months.</p>
+        </div>
+      </div>
+    </div>
+  </div><!--== End Vascular Content ==-->
+
+  <div class="footer"><!--== Start Footer ==-->
+    <div class="row">
+      <div class="col-xl-8 col-lg-12">
+        <div class="row footer-center">
+          <div class="footer-links">
+            <ul class="footer-list">
+              <li class="footer-list-element"><a href="sitemap.html">Site Map</a></li>
+              <li class="footer-list-element"><a href="hipaa.html">HIPAA</a></li>
+              <li class="footer-list-element"><a href="privacy.html">Privacy Policy</a></li>
+              <li class="footer-list-element"><a href="terms.html">Terms</a></li>
+              <li class="footer-list-element"><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="footer-img-holder">
+            <a href="https://www.bbb.org/chattanooga/business-reviews/medical-imaging-services/tennessee-interventional-and-imaging-associates-pllc-in-chattanooga-tn-40103607" target="_blank"><img class="img-bbb" src="img/footer-acc.png" alt="Better Business Bureau Accredited Business"></a>
+            <iframe class="img-facebook" title="Like Tennessee Interventional and Imaging Associates on facebook"  src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftiiarad&width=122&layout=button&action=like&size=large&show_faces=false&share=true&height=65&appId"
+                    width="122" height="65" >
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 map-holder"> <!--== Start Map ==-->
+        <div id="map"></div>
+          <script>
+            function initMap() {
+              // Styles a map in night mode.
+              var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 35.0475311, lng: -85.2917063},
+                zoom: 16,
+                styles: [
+                  {
+                    featureType: 'all',
+                    elementType: 'all',
+                    stylers: [{saturation: '0'}, {hue: '#e7ecf0'}]
+                  },
+                  {
+                    featureType: 'road',
+                    elementType: 'all',
+                    stylers: [{saturation: '-70'}]
+                  },
+                  {
+                    featureType: 'transit',
+                    elementType: 'all',
+                    stylers: [{visibility: 'off'}]
+                  },
+                  {
+                    featureType: 'poi',
+                    elementType: 'all',
+                    stylers: [{visibility: 'off'}]
+                  },
+                  {
+                    featureType: 'water',
+                    elementType: 'all',
+                    stylers: [{visibility: 'simplified'}, {saturation: '-60'}]
+                  }
+                ]
+              });
+              var marker = new google.maps.Marker({
+                position: {lat: 35.0481695, lng: -85.2908826},
+                map: map
+              });
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFQtcIUDGXCzFWhnaey32gE_n6OB0fAaY&callback=initMap" async defer></script>
+        </div><!--== End Map ==-->
+      </div>
+  </div><!--== End Footer ==-->
+</div><!--== End Container-Fluid ==-->
+<script>
+  jQuery('.menu-icon').click(function() {
+    jQuery(this).toggleClass('opened');
+  });
+</script>
+</body>
+</html>

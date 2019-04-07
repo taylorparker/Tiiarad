@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tiiarad | Our Physicians</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mobile.min.js"></script>
+</head>
+<body>
+  <script>
+  $(function() {
+    var header = $(".menu");
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 100) {
+            header.addClass("scrolled");
+        } else {
+            header.removeClass("scrolled");
+        }
+    });
+
+  });
+  </script>
+<div class="container-fluid no-padding"><!--== Starts Container-fluid==-->
+
+  <div class="row menu"><!--== Starts Desktop Menu ==-->
+    <div class="col-md-2"><!--== Starts Desktop Menu Logo==-->
+      <div class="logo-holder">
+        <a href="index.html"><img class="img-logo" src="img/logo.png" alt="Tennessee Interventional and Imaging Associates"></a>
+      </div>
+    </div><!--== Ends Desktop Menu Logo==-->
+    <div class="col-md-10"><!--== Starts Desktop Menu Links ==-->
+      <div class="black-nav-menu">
+        <ul class="menu-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pay.html">Pay Your Bill</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="services.html">Services and Procedures</a>
+            <ul class="dropdown">
+              <li><a href="di.html">Diagnostic Imaging</a>
+                <ul class="sub-dropdown">
+                  <li><a href="bone-density.html">Bone Densitometry</a></li>
+                  <li><a href="ct.html">CT Scan</a></li>
+                  <li><a href="mri.html">MRI</a></li>
+                  <li><a href="nuclear-medicine.html">Nuclear Medicine</a></li>
+                  <li><a href="pet-ct.html">Pet/CT</a></li>
+                  <li><a href="ultrasound.html">Ultrasound</a></li>
+                  <li><a href="breast-imaging.html">Breast Imaging</a></li>
+                  <li><a href="pediatric-radiology.html">Pediatric Radiology</a></li>
+                  <li><a href="other-services.html">Other Exams and Services</a></li>
+                </ul>
+              </li>
+              <li><a href="ir.html">Interventional Radiology</a>
+                <ul class="sub-dropdown">
+                  <li><a href="neuro.html">Neurointerventional Radiology</a></li>
+                  <li><a href="vascular.html">Vascular</a></li>
+                  <li><a href="gibiliary.html">GI/Biliary</a></li>
+                  <li><a href="renal.html">Renal</a></li>
+                  <li><a href="oncology.html">Interventional Radiology Oncology</a></li>
+                  <li><a href="general-radiology.html">General Interventional Radiology</a></li>
+                  <li><a href="embolization.html">Uterine Fibroid Embolization</a></li>
+                </ul>
+              </li>
+              <li><a href="professional-services.html">Professional Services</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About Us</a>
+            <ul class="about-dropdown">
+              <li><a href="team.html">Meet The Team</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div><!--== Ends Desktop Menu Links ==-->
+  </div><!--== Ends Desktop Menu ==-->
+
+  <div id="mobile-nav"><!--== Starts Mobile Menu ==-->
+    <div class="logo"><a href="index.html"><img class="mobile-img-logo" src="img/mobile-logo.png" alt="Tennessee Interventional and Imaging Associates"></a></div>
+      <div class="menu-button">
+        <div class="icon">
+          <div class="menu-icon menu-icon-3">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pay.html">Pay Your Bill</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li class="parent">
+            <a href="services.html">Services and Procedures</a>
+            <ul>
+                <li class="parent">
+                    <a href="di.html">Diagnostic Imaging</a>
+                    <ul>
+                        <li><a href="bone-density.html">Bone Densitometry</a></li>
+                        <li><a href="ct.html">CT Scan</a></li>
+                        <li><a href="mri.html">MRI</a></li>
+                        <li><a href="nuclear-medicine.html">Nuclear Medicine</a></li>
+                        <li><a href="pet-ct.html">Pet/CT</a></li>
+                        <li><a href="ultrasound.html">Ultrasound</a></li>
+                        <li><a href="breast-imaging.html">Breast Imaging</a></li>
+                        <li><a href="pediatric-radiology.html">Pediatric Radiology</a></li>
+                        <li><a href="other-services.html">Other Exams and Services</a></li>
+                    </ul>
+                </li>
+                <li class="parent">
+                  <a href="ir.html">Interventional Radiology</a>
+                      <ul>
+                        <li><a href="neuro.html">Neurointerventional Radiology</a></li>
+                        <li><a href="vascular.html">Vascular</a></li>
+                        <li><a href="gibiliary.html">GI/Biliary</a></li>
+                        <li><a href="renal.html">Renal</a></li>
+                        <li><a href="oncology.html">Interventional Radiology Oncology</a></li>
+                        <li><a href="general-radiology.html">General Interventional Radiology</a></li>
+                        <li><a href="embolization.html">Uterine Fibroid Embolization</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="professional-services.html">Professional Services</a></li>
+              </ul>
+          </li>
+          <li class="parent">
+              <a href="about.html">About Us</a>
+              <ul>
+                  <li><a href="team.html">Meet The Team</a></li>
+              </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </div><!--== Ends Mobile Menu ==-->
+
+  <div class="row">
+    <div class="col-md-12 team-title-holder">
+      <h1 class="team-title-text">Meet our Radiologists</h1>
+      <p class="team-desc">Experience the difference with subspecialty trained radiologists.</p>
+    </div>
+  </div>
+
+  <hr class="vascular-hr">
+
+  <div class="row">
+    <div class="col-md-12">
+      <p class="team-desc">Interventional radiologists are board-certified physicians who utilize minimally invasive, image-guided procedures to diagnose and treat almost every organ system. Interventional radiology benefits the patient because it has less risk, less pain, and less recovery time than open surgery. Our IR team is well known for their expertise and has won awards for their innovative procedures.  Check out <a href="ir.html">Interventional Radiology Procedures</a> for more details on specific procedures. </p>
+    </div>
+  </div>
+
+  <div class="row bottom">
+    <div class="col-md-12 int-rad-holder">
+      <p class="team-desc">Interventional Radiologists:</p>
+    </div>
+  </div>
+
+  <div class="physicians-content bottom">
+    
+    <div class="row bottom">
+      <div class="col-md-4 col-sm-6 bottom">
+        <div class="employee">
+          <a href="steve-quarfordt.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/steve-q.jpg" alt="Steve Quarfordt">
+          <p class="physician-name">Steve Quarfordt, MD</p>
+          <p class="employee-position">IR</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 bottom">
+        <div class="employee">
+          <a href="justin-calvert.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/justin-c.jpg" alt="Justin Calvert">
+          <p class="physician-name">Justin Calvert, MD</p>
+          <p class="employee-position">IR</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 bottom">
+        <div class="employee">
+          <a href="harris-hawk.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/harris-h.jpg" alt="Harris Hawk">
+          <p class="physician-name">Harris Hawk, MD</p>
+          <p class="employee-position">IR</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p class="team-desc">Many people do not know that radiology has subspecialties. We've worked very hard to find the best radiologists in each subspecialty so that only the most qualified radiologist reads a patient's exam. We also invest in our radiologists to keep them educated and trained in the newest imaging technology available. Check out <a href="di.html">Diagnostic Imaging</a> for more information on services available. </p>
+      </div>
+    </div>
+
+    <div class="row bottom">
+      <div class="col-md-12 int-rad-holder">
+        <p class="team-desc">Diagnostic Radiologists:</p>
+      </div>
+    </div>
+
+    <div class="row bottom">
+      <div class="col-md-3 col-sm-6 bottom">
+        <div class="employee">
+          <a href="john-allred.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/john-a.jpg" alt="John Allred">
+          <p class="physician-name">John Allred, MD</p>
+          <p class="employee-position">Neuro</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 bottom">
+        <div class="employee">
+          <a href="jeff-alvis.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/jeff-a.jpg" alt="Jeff Alvis">
+          <p class="physician-name">Jeff Alvis, MD</p>
+          <p class="employee-position">Body</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 bottom">
+        <div class="employee">
+          <a href="jose-barriocanal.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/jose-b.jpg" alt="Jose Barriocanal">
+          <p class="physician-name">Jose Barriocanal, MD</p>
+          <p class="employee-position">Breast/Nuclear</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 bottom">
+        <div class="employee">
+          <a href="noel-bergquist.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/noel-b.jpg" alt="Noel Bergquist">
+          <p class="physician-name">Noel Bergquist, MD</p>
+          <p class="employee-position">MSK/Breast</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row bottom">
+      <div class="col-md-3 col-sm-6 bottom">
+        <div class="employee">
+          <a href="stephen-bresson.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/stephen-b.jpg" alt="Stephen Bresson">
+          <p class="physician-name">Stephen Bresson, MD</p>
+          <p class="employee-position">Pediatrics</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 bottom">
+        <div class="employee">
+          <a href="todd-buchanan.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/todd-b.jpg" alt="Todd Buchanan">
+          <p class="physician-name">Todd Buchanan, MD</p>
+          <p class="employee-position">General</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 bottom">
+        <div class="employee">
+          <a href="lynn-carlson.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/lynn-c.jpg" alt="Lynn Carlson">
+          <p class="physician-name">Lynn Carlson, MD</p>
+          <p class="employee-position">Pediatrics</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 bottom">
+        <div class="employee">
+          <a href="hari-challa.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/hari-c.jpg" alt="Hari Challa">
+          <p class="physician-name">Hari Challa, MD</p>
+          <p class="employee-position">Pediatrics</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row bottom">
+    <div class="col-md-3 col-sm-6 bottom">
+      <div class="employee">
+        <a href="kevin-cormier.html" class="phys">
+        <img class="employee-img" src="img/team/physicians/kevin-c.jpg" alt="Kevin Cormier">
+        <p class="physician-name">Kevin Cormier, MD</p>
+        <p class="employee-position">Diagnostic</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 bottom">
+      <div class="employee">
+          <a href="tae-han.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/tae-h.jpg" alt="Tae Han">
+          <p class="physician-name">Tae Han, MD</p>
+          <p class="employee-position">Pediatric</p>
+          </a>
+      </div>
+    </div>
+
+      <div class="col-md-3 col-sm-6 bottom">
+        <div class="employee">
+          <a href="patrick-henderson.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/patrick-h.jpg" alt="Tae Han">
+          <p class="physician-name">Patrick Henderson, MD</p>
+          <p class="employee-position">Body</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 bottom">
+        <div class="employee">
+          <a href="andrew-hill.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/andrew-h.jpg" alt="Andrew Hill">
+          <p class="physician-name">Andrew Hill, MD</p>
+          <p class="employee-position">MSK</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row bottom">
+    <div class="col-md-3 col-sm-6 bottom">
+      <div class="employee">
+        <a href="eileen-lorenz.html" class="phys">
+        <img class="employee-img" src="img/team/physicians/eileen-l.jpg" alt="Eileen Lorenz">
+        <p class="physician-name">Eileen Lorenz</p>
+        <p class="employee-position">MSK</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 bottom">
+      <div class="employee">
+        <a href="loay-muftah.html" class="phys">
+        <img class="employee-img" src="img/team/physicians/loay-m.jpg" alt="Loay Muftah">
+        <p class="physician-name">Loay Muftah, MD</p>
+        <p class="employee-position">Nuclear</p>
+        </a>
+      </div>
+    </div>
+      
+    <div class="col-md-3 col-sm-6 bottom">
+      <div class="employee">
+        <a href="saima-muzahir.html" class="phys">
+        <img class="employee-img" src="img/team/physicians/saima-m.jpg" alt="Saima Muzahir">
+        <p class="physician-name">Saima Muzahir, MD</p>
+        <p class="employee-position">Nuclear</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 bottom">
+      <div class="employee">
+        <a href="michael-nichols.html" class="phys">
+        <img class="employee-img" src="img/team/physicians/michael-n.jpg" alt="Michael Nichols">
+        <p class="physician-name">Michael Nichols, MD</p>
+        <p class="employee-position">IR</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <div class="row bottom">
+      <div class="col-md-3 col-sm-6 bottom">
+        <div class="employee">
+          <a href="samuel-porter.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/sam-p.jpg" alt="Samuel Porter">
+          <p class="physician-name">Samuel Porter, MD</p>
+          <p class="employee-position">Neuro</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 bottom">
+        <div class="employee">
+          <a href="roxsann-roberts.html" class="phys">
+          <img class="employee-img" src="img/team/physicians/roxsann-r.jpg" alt="Roxsann Roberts">
+          <p class="physician-name">Roxsann Roberts, MD</p>
+          <p class="employee-position">Breast/Neuro</p>
+          </a>
+        </div>
+      </div>
+
+        <div class="col-md-3 col-sm-6 bottom">
+          <div class="employee">
+            <a href="jason-smith.html" class="phys">
+            <img class="employee-img" src="img/team/physicians/jason-s.jpg" alt="Jason Smith">
+            <p class="physician-name">Jason Smith, MD</p>
+            <p class="employee-position">Neuro</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!--== End Physicians Content ==-->
+
+  <div class="footer"><!--== Start Footer ==-->
+    <div class="row">
+      <div class="col-xl-8 col-lg-12">
+        <div class="row footer-center">
+          <div class="footer-links">
+            <ul class="footer-list">
+              <li class="footer-list-element"><a href="sitemap.html">Site Map</a></li>
+              <li class="footer-list-element"><a href="hipaa.html">HIPAA</a></li>
+              <li class="footer-list-element"><a href="privacy.html">Privacy Policy</a></li>
+              <li class="footer-list-element"><a href="terms.html">Terms</a></li>
+              <li class="footer-list-element"><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="footer-img-holder">
+            <a href="https://www.bbb.org/chattanooga/business-reviews/medical-imaging-services/tennessee-interventional-and-imaging-associates-pllc-in-chattanooga-tn-40103607" target="_blank"><img class="img-bbb" src="img/footer-acc.png" alt="Better Business Bureau Accredited Business"></a>
+            <iframe class="img-facebook" title="Like Tennessee Interventional and Imaging Associates on facebook"  src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftiiarad&width=122&layout=button&action=like&size=large&show_faces=false&share=true&height=65&appId"
+                    width="122" height="65" >
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 map-holder"> <!--== Start Map ==-->
+        <div id="map"></div>
+          <script>
+            function initMap() {
+              // Styles a map in night mode.
+              var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 35.0475311, lng: -85.2917063},
+                zoom: 16,
+                styles: [
+                  {
+                    featureType: 'all',
+                    elementType: 'all',
+                    stylers: [{saturation: '0'}, {hue: '#e7ecf0'}]
+                  },
+                  {
+                    featureType: 'road',
+                    elementType: 'all',
+                    stylers: [{saturation: '-70'}]
+                  },
+                  {
+                    featureType: 'transit',
+                    elementType: 'all',
+                    stylers: [{visibility: 'off'}]
+                  },
+                  {
+                    featureType: 'poi',
+                    elementType: 'all',
+                    stylers: [{visibility: 'off'}]
+                  },
+                  {
+                    featureType: 'water',
+                    elementType: 'all',
+                    stylers: [{visibility: 'simplified'}, {saturation: '-60'}]
+                  }
+                ]
+              });
+              var marker = new google.maps.Marker({
+                position: {lat: 35.0481695, lng: -85.2908826},
+                map: map
+              });
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFQtcIUDGXCzFWhnaey32gE_n6OB0fAaY&callback=initMap" async defer></script>
+        </div><!--== End Map ==-->
+      </div>
+  </div><!--== End Footer ==-->
+</div><!--== End Container-Fluid ==-->
+<script>
+  jQuery('.menu-icon').click(function() {
+    jQuery(this).toggleClass('opened');
+  });
+</script>
+</body>
+</html>

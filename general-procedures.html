@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tiiarad | General Procedures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mobile.min.js"></script>
+</head>
+<body>
+<script>
+$(function() {
+  var header = $(".menu");
+
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll >= 50) {
+          header.addClass("scrolled");
+      } else {
+          header.removeClass("scrolled");
+      }
+  });
+
+});
+</script>
+<div class="container-fluid no-padding"><!--== Starts Container-fluid==-->
+
+  <div class="row menu"><!--== Starts Desktop Menu ==-->
+    <div class="col-md-2"><!--== Starts Desktop Menu Logo==-->
+      <div class="logo-holder">
+        <a href="index.html"><img class="img-logo" src="img/logo.png" alt="Tennessee Interventional and Imaging Associates"></a>
+      </div>
+    </div><!--== Ends Desktop Menu Logo==-->
+    <div class="col-md-10"><!--== Starts Desktop Menu Links ==-->
+      <div class="black-nav-menu">
+        <ul class="menu-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pay.html">Pay Your Bill</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="services.html">Services and Procedures</a>
+            <ul class="dropdown">
+              <li><a href="di.html">Diagnostic Imaging</a>
+                <ul class="sub-dropdown">
+                  <li><a href="bone-density.html">Bone Densitometry</a></li>
+                  <li><a href="ct.html">CT Scan</a></li>
+                  <li><a href="mri.html">MRI</a></li>
+                  <li><a href="nuclear-medicine.html">Nuclear Medicine</a></li>
+                  <li><a href="pet-ct.html">Pet/CT</a></li>
+                  <li><a href="ultrasound.html">Ultrasound</a></li>
+                  <li><a href="breast-imaging.html">Breast Imaging</a></li>
+                  <li><a href="pediatric-radiology.html">Pediatric Radiology</a></li>
+                  <li><a href="other-services.html">Other Exams and Services</a></li>
+                </ul>
+              </li>
+              <li><a href="ir.html">Interventional Radiology</a>
+                <ul class="sub-dropdown">
+                  <li><a href="neuro.html">Neurointerventional Radiology</a></li>
+                  <li><a href="vascular.html">Vascular</a></li>
+                  <li><a href="gibiliary.html">GI/Biliary</a></li>
+                  <li><a href="renal.html">Renal</a></li>
+                  <li><a href="oncology.html">Interventional Radiology Oncology</a></li>
+                  <li><a href="general-radiology.html">General Interventional Radiology</a></li>
+                  <li><a href="embolization.html">Uterine Fibroid Embolization</a></li>
+                </ul>
+              </li>
+              <li><a href="professional-services.html">Professional Services</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About Us</a>
+            <ul class="about-dropdown">
+              <li><a href="team.html">Meet The Team</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div><!--== Ends Desktop Menu Links ==-->
+  </div><!--== Ends Desktop Menu ==-->
+
+  <div id="mobile-nav"><!--== Starts Mobile Menu ==-->
+    <div class="logo"><a href="index.html"><img class="mobile-img-logo" src="img/mobile-logo.png" alt="Tennessee Interventional and Imaging Associates"></a></div>
+      <div class="menu-button">
+        <div class="icon">
+          <div class="menu-icon menu-icon-3">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+          </div>
+        </div>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pay.html">Pay Your Bill</a></li>
+        <li><a class="child__link" href="locations.html">Locations</a></li>
+        <li class="parent">
+            <a class="child__link" href="services.html">Services and Procedures</a>
+            <ul>
+                <li class="parent">
+                    <a class="child__link" href="di.html">Diagnostic Imaging</a>
+                    <ul>
+                        <li><a class="child__link" href="bone-density.html">Bone Densitometry</a></li>
+                        <li><a class="child__link" href="ct.html">CT Scan</a></li>
+                        <li><a class="child__link" href="mri.html">MRI</a></li>
+                        <li><a class="child__link" href="nuclear-medicine.html">Nuclear Medicine</a></li>
+                        <li><a class="child__link" href="pet-ct.html">Pet/CT</a></li>
+                        <li><a class="child__link" href="ultrasound.html">Ultrasound</a></li>
+                        <li><a class="child__link" href="breast-imaging.html">Breast Imaging</a></li>
+                        <li><a class="child__link" href="pediatric-radiology.html">Pediatric Radiology</a></li>
+                        <li><a class="child__link" href="other-services.html">Other Exams and Services</a></li>
+                    </ul>
+                </li>
+                <li class="parent">
+                  <a class="child__link" href="ir.html">Interventional Radiology</a>
+                      <ul>
+                        <li><a class="child__link" href="neuro.html">Neurointerventional Radiology</a></li>
+                        <li><a class="child__link" href="vascular.html">Vascular</a></li>
+                        <li><a class="child__link" href="gibiliary.html">GI/Biliary</a></li>
+                        <li><a class="child__link" href="renal.html">Renal</a></li>
+                        <li><a class="child__link" href="oncology.html">Interventional Radiology Oncology</a></li>
+                        <li><a class="child__link" href="general-radiology.html">General Interventional Radiology</a></li>
+                        <li><a class="child__link" href="embolization.html">Uterine Fibroid Embolization</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="professional-services.html">Professional Services</a></li>
+              </ul>
+          </li>
+          <li class="parent">
+              <a href="about.html">About Us</a>
+              <ul>
+                  <li><a href="team.html">Meet The Team</a></li>
+              </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </div><!--== Ends Mobile Menu ==-->
+
+  <div class="neuro-ir-content">
+    <div class="row">
+      <div class="col-md-12 procedures-title-holder">
+        <h2 class="procedures-title">General IR Procedures<h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 vascular-procedures">
+        <div class="procedure">
+          <h4 class="procedure-name">Angiography & Venography</h4>
+          <div class="question">
+            <p class="question-text">What is Angiogrpahy and Venography?</p>
+            <p class="answer-text">Angiography is an x-ray of the arteries and venography is an x-ray of the veins used to diagnose and treat blockages and other blood vessel problems. Through a small incision, a catheter is inserted into the blood vessel with a contrast agent to make the artery or vein visible on the x-ray.
+            </p>
+          </div>
+          <div class="question">
+            <p class="question-text">What are some common uses for Angiography and Venography?</p>
+            <p class="answer-text">Angiography and Venogrpahy are used to diagnose medical conditions in multiple areas, including the:</p>
+              <ul>
+                <li class="answer-text">Brain</li>
+                <li class="answer-text">Neck</li>
+                <li class="answer-text">Heart</li>
+                <li class="answer-text">Chest</li>
+                <li class="answer-text">Abdomen (kidneys and liver)</li>
+                <li class="answer-text">Pelvis</li>
+                <li class="answer-text">Legs and Feet</li>
+                <li class="answer-text">Arms and Hands</li>
+              </ul>
+            <p class="answer-text">The procedure can:</p>
+            <ul>
+              <li class="answer-text">identify abnormalities, such as aneurysms or abnormal communications between blood vessels.</li>
+              <li class="answer-text">detect plaque disease in the carotid artery, which can cause a stroke.</li>
+              <li class="answer-text">guide interventional radiologists and surgeons making repairs to blood vessels and evaluate repairs.</li>
+              <li class="answer-text">evaluate arteries feeding a tumor prior to surgery.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="procedure">
+          <h4 class="procedure-name">Embolization</h4>
+          <div class="question">
+            <p class="question-text">What is Embolization?</p>
+            <p class="answer-text">Embolization is a minimally invasive procedure that places medications or synthetic materials (embolic agents) through a catheter into a blood vessel or vascular channel to block blood flow to a certain area of the body. Embolization is a highly effective way to control bleeding and is less invasive than open surgery.
+            </p>
+            <ul>
+              <li class="answer-text">control bleeding resulting from an injury, tumor, or gastrointestinal tract lesion such as an ulcer. </li>
+              <li class="answer-text">cut off blood supply to uterine fibroid tumors that cause long or heavy menstrual periods. See Uterine Fibroid Embolization page for more information on how interventional radiology can help with uterine fibroids. </li>
+              <li class="answer-text"> close off vessel that supply blood to tumors when removal is difficult or impossible so that the tumor shrinks or slows the growing process. </li>
+              <li class="answer-text">treat aneurysms by cutting off blood supply to the aneurysm or closing the aneusymal sac itself. </li>
+              <li class="answer-text">treat varicoceles (enlarged veins) in the scrotum that may cause infertility. </li>
+            </ul>
+          </div>
+        </div>
+        <div class="procedure">
+          <h4 class="procedure-name">Percutaneous Abscess Drainage</h4>
+          <div class="question">
+            <p class="question-text">What is Abscess Drainage?</p>
+            <p class="answer-text">An abscess is an infectious fluid filled mass within the body. Percutaneous abscess drainage uses image guidance to insert a catheter through the skin and into the abscess to remove or drain the infected fluid.</p>
+          </div>
+          <div class="question">
+            <p class="question-text">What are some common uses for Abscess Drainage?</p>
+            <p class="answer-text">Most commonly, percutaneous abscess drainage is used to remove infected fluid in the abdomen and pelvis. Abscess have many possible causes but may be the result of a recent surgery or an infection such as diverticulitis. </p>
+          </div>
+        </div>
+        <div class="procedure">
+          <h4 class="procedure-name">Chest and Abdominal Pleurx Catheter Placement</h4>
+          <div class="question">
+            <p class="question-text">What is a PleurX Catheter?</p>
+            <p class="answer-text">The PleurX catheter is a drainage system that lets you manage pleural effusions or malignant ascites. The PleurX catheter is either inserted into the chest for draining pleural effusions or in the abdomen for draining malignant ascites. While not in use, the end of the catheter stays covered on the outside of the body by a thin protective dressing. </p>
+          </div>
+          <div class="question">
+            <p class="question-text">How can a Chest or Abdominal PleurX Catheter help you?</p>
+            <p class="answer-text">The PleurX catheter system allows you to drain fluid at home and on your own time, without needing weekly doctor visits for thoracentesis or paracentesis. Clothing easily covers the catheter so no one will know you have a PleurX catheter if you do not want them to. </p>
+          </div>
+          <div class="question">
+            <p class="question-text">What is a pleural effusion?</p>
+            <p class="answer-text">A pleural effusion is when fluid builds up are your lungs, causing breathing difficulty. </p>
+          </div>
+          <div class="question">
+            <p class="question-text">What is malignant ascites?</p>
+            <p class="answer-text">Malignant ascites is when fluid builds up in your abdomen, causing pressure and discomfort. </p>
+          </div>
+        </div>
+        <div class="procedure">
+          <h4 class="procedure-name">PICC Placement</h4>
+          <div class="question">
+            <p class="question-text">What is PICC?</p>
+            <p class="answer-text">PICC stands for peripherally inserted central catheter, which is inserted into a vein in the arm or leg extending to the largest veins near your heart. PICC is used to carry nutrients and medicines into your body and may also be used to draw blood for blood tests. Typically, PICC is used when central IV access is needed for longer periods of time. </p>
+          </div>
+          <div class="question">
+            <p class="question-text">What are some common uses for PICC Placement?</p>
+            <p class="answer-text">PICC may be used for the following reasons:</p>
+            <ul>
+              <li class="answer-text">An extreme needle phobia</li>
+              <li class="answer-text">Veins that are difficult to get into to start an IV</li>
+              <li class="answer-text">Chemotherapy that has to be given as a continuous infusion (more than an hour)</li>
+              <li class="answer-text">frequent drawing of blood samples during treatment</li>
+              <li class="answer-text">Intravenous therapies such as blood transfusions and antibiotic therapies</li>
+            </ul>
+          </div>
+        </div>
+        <div class="procedure">
+          <h4 class="procedure-name">Arthrography</h4>
+          <div class="question">
+            <p class="question-text">What is an Arthrography?</p>
+            <p class="answer-text">Arthrography is a type of imaging used to diagnose and evaluate joint conditions. It can detect disease within the ligaments, tendons, and cartilage. Indirect arthrography is where a contrast material is injected into the blood stream and eventually absorbed into the joint. More commonly used, direct arthrography is where a contrast material is directly injected into the joint, which enlarges the joint allowing for enhanced imaging and improved evaluation of diseases or conditions within the joint. This procedure is usually used to identify abnormalities in the shoulder, elbow, wrist, hip, knee, and ankle. ​</p>
+          </div>
+        </div>
+        <div class="procedure">
+          <h4 class="procedure-name">Epidural Steroid Injection</h4>
+          <div class="question">
+            <p class="question-text">What is an Epidural Steroid Injection?</p>
+            <p class="answer-text">An epidural steroid injection is an injection of an anesthetic and an anti-inflammatory medication (such as cortisone), which reduces inflammation and lessens (or resolves) pain associated with inflammation of the nerve root that radiates to an arm or leg. The term "epidural" refers to the injection site called the epidural space, which is the space around the spinal cord and is the outermost part of the spinal canal. Imaging guidance, such as fluoroscopy or CT, may be used to help place the injection needle in the targets area causing pain. ​​</p>
+          </div>
+        </div>
+        <div class="procedure">
+          <h4 class="procedure-name">FaceT Joint Injection</h4>
+          <div class="question">
+            <p class="question-text">What is a facet joint injection?</p>
+            <p class="answer-text">Facet joints are located on each side of the vertebra in the neck and back where one vertebrae slightly overlaps another. These joints help guide the spine in movement and provide support. A facet joint injection is an image guided injection of an anesthetic and steroid medication directly into the joint causing pain to provide relief from pain commonly associated with arthritis or back injury. ​​​</p>
+          </div>
+        </div>
+        <div class="procedure">
+          <h4 class="procedure-name">Ultrasound Fine Needle Aspiration</h4>
+          <div class="question">
+            <p class="question-text">What is an Ultrasound Fine Needle Aspiration?</p>
+            <p class="answer-text">Ultrasound Fine Needle Aspiration Biopsy is an ultrasound guided biopsy where ultrasound images are used to help guide the interventional radiologist to the site of the suspicious imaging findings. There the radiologist uses a fine (very thin) needle to sample a small amount of tissue (fine needle aspiration). ​​​</p>
+          </div>
+          <div class="question">
+            <p class="question-text">What are some common uses for an Ultrasound Fine Needle Aspiration?</p>
+            <p class="answer-text">The most common reasons for an ultrasound fine needle aspiration biopsy is to find out what is causing a thyroid lump or breast mass. ​​​</p>
+          </div>
+        </div>
+        <div class="procedure">
+          <h4 class="procedure-name">CT Guided Biopsy</h4>
+          <div class="question">
+            <p class="question-text">What is a CT guided biopsy?</p>
+            <p class="answer-text">A biopsy is a procedure that removes and examines tissue from the body to discover the presence, cause, or extent of a disease. A CT guided biopsy means that a CT (computed tomography) scanner is used to take detailed images of the inside of the body that an interventional radiologist will use to accurately insert a needle into the tissue or organ and remove a sample for testing (biopsy).​​​</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"><!--== Start Footer ==-->
+    <div class="row">
+      <div class="col-xl-8 col-lg-12">
+        <div class="row footer-center">
+          <div class="footer-links">
+            <ul class="footer-list">
+              <li class="footer-list-element"><a href="sitemap.html">Site Map</a></li>
+              <li class="footer-list-element"><a href="hipaa.html">HIPAA</a></li>
+              <li class="footer-list-element"><a href="privacy.html">Privacy Policy</a></li>
+              <li class="footer-list-element"><a href="terms.html">Terms</a></li>
+              <li class="footer-list-element"><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="footer-img-holder">
+            <a href="https://www.bbb.org/chattanooga/business-reviews/medical-imaging-services/tennessee-interventional-and-imaging-associates-pllc-in-chattanooga-tn-40103607" target="_blank"><img class="img-bbb" src="img/footer-acc.png" alt="Better Business Bureau Accredited Business"></a>
+            <iframe class="img-facebook" title="Like Tennessee Interventional and Imaging Associates on facebook"  src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftiiarad&width=122&layout=button&action=like&size=large&show_faces=false&share=true&height=65&appId"
+                    width="122" height="65" >
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 map-holder"> <!--== Start Map ==-->
+        <div id="map"></div>
+          <script>
+            function initMap() {
+              // Styles a map in night mode.
+              var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 35.0475311, lng: -85.2917063},
+                zoom: 16,
+                styles: [
+                  {
+                    featureType: 'all',
+                    elementType: 'all',
+                    stylers: [{saturation: '0'}, {hue: '#e7ecf0'}]
+                  },
+                  {
+                    featureType: 'road',
+                    elementType: 'all',
+                    stylers: [{saturation: '-70'}]
+                  },
+                  {
+                    featureType: 'transit',
+                    elementType: 'all',
+                    stylers: [{visibility: 'off'}]
+                  },
+                  {
+                    featureType: 'poi',
+                    elementType: 'all',
+                    stylers: [{visibility: 'off'}]
+                  },
+                  {
+                    featureType: 'water',
+                    elementType: 'all',
+                    stylers: [{visibility: 'simplified'}, {saturation: '-60'}]
+                  }
+                ]
+              });
+              var marker = new google.maps.Marker({
+                position: {lat: 35.0481695, lng: -85.2908826},
+                map: map
+              });
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFQtcIUDGXCzFWhnaey32gE_n6OB0fAaY&callback=initMap" async defer></script>
+        </div><!--== End Map ==-->
+      </div>
+  </div><!--== End Footer ==-->
+</div><!--== Ends Container-fluid==-->
+<script>
+jQuery('.menu-icon').click(function() {
+  jQuery(this).toggleClass('opened');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tiiarad | Site Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mobile.min.js"></script>
+</head>
+<body>
+<script>
+$(function() {
+  var header = $(".menu");
+
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll >= 100) {
+          header.addClass("scrolled");
+      } else {
+          header.removeClass("scrolled");
+      }
+  });
+
+});
+</script>
+  <div class="container-fluid no-padding">
+    <div class="row menu"><!--== Starts Desktop Menu ==-->
+      <div class="col-md-2"><!--== Starts Desktop Menu Logo==-->
+        <div class="logo-holder">
+          <a href="index.html"><img class="img-logo" src="img/logo.png" alt="Tennessee Interventional and Imaging Associates"></a>
+        </div>
+      </div><!--== Ends Desktop Menu Logo==-->
+      <div class="col-md-10"><!--== Starts Desktop Menu Links ==-->
+        <div class="black-nav-menu">
+          <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pay.html">Pay Your Bill</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="services.html">Services and Procedures</a>
+              <ul class="dropdown">
+                <li><a href="di.html">Diagnostic Imaging</a>
+                  <ul class="sub-dropdown">
+                    <li><a href="bone-density.html">Bone Densitometry</a></li>
+                    <li><a href="ct.html">CT Scan</a></li>
+                    <li><a href="mri.html">MRI</a></li>
+                    <li><a href="nuclear-medicine.html">Nuclear Medicine</a></li>
+                    <li><a href="pet-ct.html">Pet/CT</a></li>
+                    <li><a href="ultrasound.html">Ultrasound</a></li>
+                    <li><a href="breast-imaging.html">Breast Imaging</a></li>
+                    <li><a href="pediatric-radiology.html">Pediatric Radiology</a></li>
+                    <li><a href="other-services.html">Other Exams and Services</a></li>
+                  </ul>
+                </li>
+                <li><a href="ir.html">Interventional Radiology</a>
+                  <ul class="sub-dropdown">
+                    <li><a href="neuro.html">Neurointerventional Radiology</a></li>
+                    <li><a href="vascular.html">Vascular</a></li>
+                    <li><a href="gibiliary.html">GI/Biliary</a></li>
+                    <li><a href="renal.html">Renal</a></li>
+                    <li><a href="oncology.html">Interventional Radiology Oncology</a></li>
+                    <li><a href="general-radiology.html">General Interventional Radiology</a></li>
+                    <li><a href="embolization.html">Uterine Fibroid Embolization</a></li>
+                  </ul>
+                </li>
+                <li><a href="professional-services.html">Professional Services</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About Us</a>
+              <ul class="about-dropdown">
+                <li><a href="team.html">Meet The Team</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div><!--== Ends Desktop Menu Links ==-->
+    </div><!--== Ends Desktop Menu ==-->
+
+    <div id="mobile-nav"><!--== Starts Mobile Menu ==-->
+      <div class="logo"><a href="index.html"><img class="mobile-img-logo" src="img/mobile-logo.png" alt="Tennessee Interventional and Imaging Associates"></a></div>
+        <div class="menu-button">
+          <div class="icon">
+            <div class="menu-icon menu-icon-3">
+              <span class="bar bar-1"></span>
+              <span class="bar bar-2"></span>
+              <span class="bar bar-3"></span>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pay.html">Pay Your Bill</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li class="parent">
+              <a class="child__link" href="services.html">Services and Procedures</a>
+              <ul>
+                  <li class="parent">
+                      <a class="child__link" href="di.html">Diagnostic Imaging</a>
+                      <ul>
+                          <li><a class="child__link" href="bone-density.html">Bone Densitometry</a></li>
+                          <li><a class="child__link" href="ct.html">CT Scan</a></li>
+                          <li><a class="child__link" href="mri.html">MRI</a></li>
+                          <li><a class="child__link" href="nuclear-medicine.html">Nuclear Medicine</a></li>
+                          <li><a class="child__link" href="pet-ct.html">Pet/CT</a></li>
+                          <li><a class="child__link" href="ultrasound.html">Ultrasound</a></li>
+                          <li><a class="child__link" href="breast-imaging.html">Breast Imaging</a></li>
+                          <li><a class="child__link" href="pediatric-radiology.html">Pediatric Radiology</a></li>
+                          <li><a class="child__link" href="other-services.html">Other Exams and Services</a></li>
+                      </ul>
+                  </li>
+                  <li class="parent">
+                    <a class="child__link" href="ir.html">Interventional Radiology</a>
+                        <ul>
+                          <li><a class="child__link" href="neuro.html">Neurointerventional Radiology</a></li>
+                          <li><a class="child__link" href="vascular.html">Vascular</a></li>
+                          <li><a class="child__link" href="gibiliary.html">GI/Biliary</a></li>
+                          <li><a class="child__link" href="renal.html">Renal</a></li>
+                          <li><a class="child__link" href="oncology.html">Interventional Radiology Oncology</a></li>
+                          <li><a class="child__link" href="general-radiology.html">General Interventional Radiology</a></li>
+                          <li><a class="child__link" href="embolization.html">Uterine Fibroid Embolization</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="professional-services.html">Professional Services</a></li>
+                </ul>
+            </li>
+            <li class="parent">
+                <a href="about.html">About Us</a>
+                <ul>
+                    <li><a href="team.html">Meet The Team</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div><!--== Ends Mobile Menu ==-->
+
+    <div class="privacy-content">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="hipaa-title-text">Tiiarad Website Map</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="site-map">
+            <li class="sitemap-text"><a href="index.html">Index</a></li>
+              <ul>
+                <li class="sitemap-text"><a href="patients.html">Patients</a></li>
+              </ul>
+            <li class="sitemap-text"><a href="pay.html">Pay Your Bill</a></li>
+            <ul>
+              <li class="sitemap-text"><a href="https://pay.imaginepay.com/Patient/GetStarted">Make A Full Payment</a></li>
+              <li class="sitemap-text"><a href="insurance.html">Insurance Coverage</a></li>
+              <li class="sitemap-text"><a href="three-month-plan.html">3 or 6 Month Plan</a></li>
+              <li class="sitemap-text"><a href="nine-month-plan.html">9 or 12 Month Plan</a></li>
+            </ul>
+            <li class="sitemap-text"><a href="locations.html">Locations</a></li>
+            <ul>
+              <li class="sitemap-text"><a href="erlanger.html">Erlanger Health System</a></li>
+              <li class="sitemap-text"><a href="murphy.html">Murphy Medical Center</a></li>
+              <li class="sitemap-text"><a href="mtn-lakes.html">Mountain Lakes Medical Center</a></li>
+              <li class="sitemap-text"><a href="siskin.html">Siskin Hospital</a></li>
+            </ul>
+            <li class="sitemap-text"><a href="services.html">Services and Procedures</a></li>
+            <ul>
+              <li class="sitemap-text"><a href="locations.html">Diagnostic Imaging</a></li>
+                <ul>
+                  <li class="sitemap-text"><a href="bone-density.html">Bone Densitometry</a></li>
+                    <ul>
+                      <li class="sitemap-text"><a href="osteoporosis.html">About Osteoporosis</a></li>
+                      <li class="sitemap-text"><a href="bone-faq.html">Bone Density FAQ</a></li>
+                    </ul>
+                  <li class="sitemap-text"><a href="ct.html">CT Scan</a></li>
+                  <ul>
+                    <li class="sitemap-text"><a href="lung-screening.html">CT Lung Screening</a></li>
+                    <li class="sitemap-text"><a href="ct-faq.html">CT Scan FAQ</a></li>
+                  </ul>
+                  <li class="sitemap-text"><a href="mri.html">MRI</a></li>
+                  <ul>
+                    <li class="sitemap-text"><a href="mri-faq.html">MRI FAQ</a></li>
+                  </ul>
+                  <li class="sitemap-text"><a href="nuclear-medicine.html">Nuclear Medicine</a></li>
+                  <ul>
+                    <li class="sitemap-text"><a href="nuclear-medicine-faq.html">Nuclear Medicine FAQ</a></li>
+                  </ul>
+                  <li class="sitemap-text"><a href="pet-ct.html">PET/CT</a></li>
+                  <ul>
+                    <li class="sitemap-text"><a href="pet-ct-faq.html">PET/CT FAQ</a></li>
+                  </ul>
+                  <li class="sitemap-text"><a href="ultrasound.html">Ultrasound</a></li>
+                  <ul>
+                    <li class="sitemap-text"><a href="ultrasound-types.html">Types of Ultrasound</a></li>
+                  </ul>
+                  <li class="sitemap-text"><a href="breast-imaging.html">Breast Imaging</a></li>
+                  <ul>
+                    <li class="sitemap-text"><a href="mammography.html">Mammography</a></li>
+                    <li class="sitemap-text"><a href="breast-t.html">Breast Tomosynthesis</a></li>
+                    <li class="sitemap-text"><a href="breast-mri.html">Breast MRI and Ultrasound</a></li>
+                    <li class="sitemap-text"><a href="breast-imaging-faq.html">Breast Imaging FAQ</a></li>
+                    <li class="sitemap-text"><a href="breast-imaging-resources.html">Breast Imaging Resources</a></li>
+                  </ul>
+                  <li class="sitemap-text"><a href="pediatric-radiology.html">Pediatric Radiology</a></li>
+                  <li class="sitemap-text"><a href="other-services.html">Other Exams and Services</a></li>
+                </ul>
+                <li class="sitemap-text"><a href="ir.html">Interventional Radiology Procedures</a></li>
+                  <ul>
+                    <li class="sitemap-text"><a href="neuro.html">Neurointerventional Radiology</a></li>
+                    <ul>
+                      <li class="sitemap-text"><a href="neuro-procedures.html">Neuro IR Procedures</a></li>
+                    </ul>
+                    <li class="sitemap-text"><a href="vascular.html">Vascular</a></li>
+                    <ul>
+                      <li class="sitemap-text"><a href="vascular-procedures.html">Vascular IR Procedures</a></li>
+                    </ul>
+                    <li class="sitemap-text"><a href="gibiliary.html">GI/Biliary</a></li>
+                    <ul>
+                      <li class="sitemap-text"><a href="gi-procedures.html">GI/Biliary IR Procedures</a></li>
+                    </ul>
+                    <li class="sitemap-text"><a href="renal.html">Renal</a></li>
+                    <ul>
+                      <li class="sitemap-text"><a href="renal-procedures.html">Renal IR Procedures</a></li>
+                    </ul>
+                    <li class="sitemap-text"><a href="oncology.html">Interventional Radiology Oncology</a></li>
+                    <ul>
+                      <li class="sitemap-text"><a href="oncology-procedures.html">IR Oncology Procedures</a></li>
+                    </ul>
+                    <li class="sitemap-text"><a href="general-radiology.html">General Interventional Radiology</a></li>
+                    <ul>
+                      <li class="sitemap-text"><a href="general-procedures.html">General IR Procedures</a></li>
+                    </ul>
+                    <li class="sitemap-text"><a href="embolization.html">Uterine Fibroid Embolization</a></li>
+                    <ul>
+                      <li class="sitemap-text"><a href="fibroid-treatment.html">Treatment Options</a></li>
+                      <li class="sitemap-text"><a href="fibroid-symptoms.html">Symptoms and Causes</a></li>
+                    </ul>
+                  </ul>
+              <li class="sitemap-text"><a href="about.html">About Us</a></li>
+              <ul>
+                <li class="sitemap-text"><a href="team.html">Meet the Team</a></li>
+                  <ul>
+                    <li class="sitemap-text"><a href="radiologists.html">Our Radiologists</a></li>
+                    <ul>
+                      <li class="sitemap-text"><a href="john-allred.html">John Allred</a></li>
+                      <li class="sitemap-text"><a href="jeff-alvis.html">Jeff Alvis</a></li>
+                      <li class="sitemap-text"><a href="jose-barriocanal.html">Jose Barriocanal</a></li>
+                      <li class="sitemap-text"><a href="noel-bergquist.html">Noel Berquist</a></li>
+                      <li class="sitemap-text"><a href="stephen-bresson.html">Stephen Bresson</a></li>
+                      <li class="sitemap-text"><a href="todd-buchanan.html">Todd Buchanan</a></li>
+                      <li class="sitemap-text"><a href="justin-calvert.html">Justin Calvert</a></li>
+                      <li class="sitemap-text"><a href="lynn-carlson.html">Lynn Carlson</a></li>
+                      <li class="sitemap-text"><a href="hari-challa.html">Hari Challa</a></li>
+                      <li class="sitemap-text"><a href="kevin-cormier.html">Kevin Cormier</a></li>
+                      <li class="sitemap-text"><a href="tae-han.html">Tae Han</a></li>
+                      <li class="sitemap-text"><a href="harris-hawk.html">Harris Hawk</a></li>
+                      <li class="sitemap-text"><a href="patrick-henderson.html">Patrick Henderson</a></li>
+                      <li class="sitemap-text"><a href="andrew-hill.html">Andrew Hill</a></li>
+                      <li class="sitemap-text"><a href="eileen-lorenz.html">Eileen Lorenz</a></li>
+                      <li class="sitemap-text"><a href="loay-muftah.html">Loay Muftah</a></li>
+                      <li class="sitemap-text"><a href="saima-muzahir.html">Saima Muzahir</a></li>
+                      <li class="sitemap-text"><a href="michael-nichols.html">Michael Nichols</a></li>
+                      <li class="sitemap-text"><a href="samuel-porter.html">Samuel Porter</a></li>
+                      <li class="sitemap-text"><a href="steve-quarfordt.html">Steve Quarfordt</a></li>
+                      <li class="sitemap-text"><a href="imran-quraishi.html">Imran Quraishi</a></li>
+                      <li class="sitemap-text"><a href="roxsann-roberts.html">Roxsann Roberts</a></li>
+                      <li class="sitemap-text"><a href="jason-smith.html">Jason Smith</a></li>
+                      <li class="sitemap-text"><a href="deanna-taylor-gantte.html">Deanna Taylor-Gantee</a></li>
+                    </ul>
+                    <li class="sitemap-text"><a href="clinical.html">Clinical Staff</a></li>
+                  </ul>
+              </ul>
+              <li class="sitemap-text"><a href="contact.html">Contact Us</a></li>
+              <li class="sitemap-text"><a href="sitemap.html">Site Map</a></li>
+              <li class="sitemap-text"><a href="hipaa.html">HIPAA</a></li>
+              <li class="sitemap-text"><a href="privacy.html">Privacy Policy</a></li>
+              <li class="sitemap-text"><a href="terms.html">Terms</a></li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer"><!--== Start Footer ==-->
+      <div class="row">
+        <div class="col-xl-8 col-lg-12">
+          <div class="row footer-center">
+            <div class="footer-links">
+              <ul class="footer-list">
+                <li class="footer-list-element"><a href="sitemap.html">Site Map</a></li>
+                <li class="footer-list-element"><a href="hipaa.html">HIPAA</a></li>
+                <li class="footer-list-element"><a href="privacy.html">Privacy Policy</a></li>
+                <li class="footer-list-element"><a href="terms.html">Terms</a></li>
+                <li class="footer-list-element"><a href="contact.html">Contact Us</a></li>
+
+
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="footer-img-holder">
+              <a href="https://www.bbb.org/chattanooga/business-reviews/medical-imaging-services/tennessee-interventional-and-imaging-associates-pllc-in-chattanooga-tn-40103607" target="_blank"><img class="img-bbb" src="img/footer-acc.png" alt="Better Business Bureau Accredited Business"></a>
+              <iframe class="img-facebook" title="Like Tennessee Interventional and Imaging Associates on facebook"  src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftiiarad&width=122&layout=button&action=like&size=large&show_faces=false&share=true&height=65&appId"
+                      width="122" height="65" >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 map-holder"> <!--== Start Map ==-->
+          <div id="map"></div>
+            <script>
+              function initMap() {
+                // Styles a map in night mode.
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  center: {lat: 35.0475311, lng: -85.2917063},
+                  zoom: 16,
+                  styles: [
+                    {
+                      featureType: 'all',
+                      elementType: 'all',
+                      stylers: [{saturation: '0'}, {hue: '#e7ecf0'}]
+                    },
+                    {
+                      featureType: 'road',
+                      elementType: 'all',
+                      stylers: [{saturation: '-70'}]
+                    },
+                    {
+                      featureType: 'transit',
+                      elementType: 'all',
+                      stylers: [{visibility: 'off'}]
+                    },
+                    {
+                      featureType: 'poi',
+                      elementType: 'all',
+                      stylers: [{visibility: 'off'}]
+                    },
+                    {
+                      featureType: 'water',
+                      elementType: 'all',
+                      stylers: [{visibility: 'simplified'}, {saturation: '-60'}]
+                    }
+                  ]
+                });
+                var marker = new google.maps.Marker({
+                  position: {lat: 35.0481695, lng: -85.2908826},
+                  map: map
+                });
+              }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFQtcIUDGXCzFWhnaey32gE_n6OB0fAaY&callback=initMap" async defer></script>
+          </div><!--== End Map ==-->
+        </div>
+    </div><!--== End Footer ==-->
+  </div><!--== Ends Container Fluid ==-->
+<script>
+  jQuery('.menu-icon').click(function() {
+    jQuery(this).toggleClass('opened');
+  });
+</script>
+</body>
+</html>

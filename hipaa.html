@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tiiarad | HIPAA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mobile.min.js"></script>
+</head>
+<script>
+$(function() {
+  var header = $(".menu");
+
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      if (scroll >= 100) {
+          header.addClass("scrolled");
+      } else {
+          header.removeClass("scrolled");
+      }
+  });
+
+});
+</script>
+<body>
+  <div class="container-fluid no-padding">
+    <div class="row menu"><!--== Starts Desktop Menu ==-->
+      <div class="col-md-2"><!--== Starts Desktop Menu Logo==-->
+        <div class="logo-holder">
+          <a href="index.html"><img class="img-logo" src="img/logo.png" alt="Tennessee Interventional and Imaging Associates"></a>
+        </div>
+      </div><!--== Ends Desktop Menu Logo==-->
+      <div class="col-md-10"><!--== Starts Desktop Menu Links ==-->
+        <div class="black-nav-menu">
+          <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pay.html">Pay Your Bill</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="services.html">Services and Procedures</a>
+              <ul class="dropdown">
+                <li><a href="di.html">Diagnostic Imaging</a>
+                  <ul class="sub-dropdown">
+                    <li><a href="bone-density.html">Bone Densitometry</a></li>
+                    <li><a href="ct.html">CT Scan</a></li>
+                    <li><a href="mri.html">MRI</a></li>
+                    <li><a href="nuclear-medicine.html">Nuclear Medicine</a></li>
+                    <li><a href="pet-ct.html">Pet/CT</a></li>
+                    <li><a href="ultrasound.html">Ultrasound</a></li>
+                    <li><a href="breast-imaging.html">Breast Imaging</a></li>
+                    <li><a href="pediatric-radiology.html">Pediatric Radiology</a></li>
+                    <li><a href="other-services.html">Other Exams and Services</a></li>
+                  </ul>
+                </li>
+                <li><a href="ir.html">Interventional Radiology</a>
+                  <ul class="sub-dropdown">
+                    <li><a href="neuro.html">Neurointerventional Radiology</a></li>
+                    <li><a href="vascular.html">Vascular</a></li>
+                    <li><a href="gibiliary.html">GI/Biliary</a></li>
+                    <li><a href="renal.html">Renal</a></li>
+                    <li><a href="oncology.html">Interventional Radiology Oncology</a></li>
+                    <li><a href="general-radiology.html">General Interventional Radiology</a></li>
+                    <li><a href="embolization.html">Uterine Fibroid Embolization</a></li>
+                  </ul>
+                </li>
+                <li><a href="professional-services.html">Professional Services</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About Us</a>
+              <ul class="about-dropdown">
+                <li><a href="team.html">Meet The Team</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div><!--== Ends Desktop Menu Links ==-->
+    </div><!--== Ends Desktop Menu ==-->
+
+    <div id="mobile-nav"><!--== Starts Mobile Menu ==-->
+      <div class="logo"><a href="index.html"><img class="mobile-img-logo" src="img/mobile-logo.png" alt="Tennessee Interventional and Imaging Associates"></a></div>
+        <div class="menu-button">
+          <div class="icon">
+            <div class="menu-icon menu-icon-3">
+              <span class="bar bar-1"></span>
+              <span class="bar bar-2"></span>
+              <span class="bar bar-3"></span>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pay.html">Pay Your Bill</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li class="parent">
+              <a class="child__link" href="services.html">Services and Procedures</a>
+              <ul>
+                  <li class="parent">
+                      <a class="child__link" href="di.html">Diagnostic Imaging</a>
+                      <ul>
+                          <li><a class="child__link" href="bone-density.html">Bone Densitometry</a></li>
+                          <li><a class="child__link" href="ct.html">CT Scan</a></li>
+                          <li><a class="child__link" href="mri.html">MRI</a></li>
+                          <li><a class="child__link" href="nuclear-medicine.html">Nuclear Medicine</a></li>
+                          <li><a class="child__link" href="pet-ct.html">Pet/CT</a></li>
+                          <li><a class="child__link" href="ultrasound.html">Ultrasound</a></li>
+                          <li><a class="child__link" href="breast-imaging.html">Breast Imaging</a></li>
+                          <li><a class="child__link" href="pediatric-radiology.html">Pediatric Radiology</a></li>
+                          <li><a class="child__link" href="other-services.html">Other Exams and Services</a></li>
+                      </ul>
+                  </li>
+                  <li class="parent">
+                    <a class="child__link" href="ir.html">Interventional Radiology</a>
+                        <ul>
+                          <li><a class="child__link" href="neuro.html">Neurointerventional Radiology</a></li>
+                          <li><a class="child__link" href="vascular.html">Vascular</a></li>
+                          <li><a class="child__link" href="gibiliary.html">GI/Biliary</a></li>
+                          <li><a class="child__link" href="renal.html">Renal</a></li>
+                          <li><a class="child__link" href="oncology.html">Interventional Radiology Oncology</a></li>
+                          <li><a class="child__link" href="general-radiology.html">General Interventional Radiology</a></li>
+                          <li><a class="child__link" href="embolization.html">Uterine Fibroid Embolization</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="professional-services.html">Professional Services</a></li>
+                </ul>
+            </li>
+            <li class="parent">
+                <a href="about.html">About Us</a>
+                <ul>
+                    <li><a href="team.html">Meet The Team</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div><!--== Ends Mobile Menu ==-->
+
+      <div class="row">
+        <div class="col-md-12 hippa-header">
+            <h1 class="hipaa-title-text">NOTICE OF PRIVACY PRACTICES</h1>
+            <p class="hipaa-text-bold text-center">Effective Date:  08/01/2011.</p>
+            <p class="hipaa-text-bold uppercase">THIS NOTICE DESCRIBES HOW MEDICAL INFORMATION ABOUT YOU MAY BE USED OR DISCLOSED AND HOW YOU CAN GET ACCESS TO THIS INFORMATION.  PLEASE REVIEW IT CAREFULLY.  IF YOU HAVE ANY QUESTIONS ABOUT THIS NOTICE OR IF YOU NEED MORE INFORMATION, PLEASE CONTACT OUR PRIVACY OFFICER:</p>
+            <p class="hipaa-text">Privacy Officer: Buffy Patton</p>
+            <p class="hipaa-text">Mailing Address:  975 East Third Street Box 376 Chattanooga, TN  37403</p>
+            <p class="hipaa-text">Telephone: 423-778-7232</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">About this Notice</h2>
+          <p class="hipaa-text">We are required by law to maintain the privacy of Protected Health Information and to give you this Notice explaining our privacy practices with regard to that information.  You have certain rights – and we have certain legal obligations – regarding the privacy of your Protected Health Information, and this Notice also explains your rights and our obligations.  We are required to abide by the terms of the current version of this Notice.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">What is Protected Health Information?</h2>
+          <p class="hipaa-text">Protected Health Information is information that individually identifies you and that we create or get from you or from another health care provider, a health plan, your employer, or a health care clearinghouse and that relates to (1) your past, present, or future physical or mental health or conditions, (2) the provision of health care to you, or (3) the past, present, or future payment for your health care.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">How We May Use and Disclose Your Protected Health Information</h2>
+          <p class="hipaa-text">We may use and disclose your Protected Health Information in the following circumstances:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">For Treatment:</h2>
+          <p class="hipaa-text">We may use Protected Health Information to give you medical treatment or services and to manage and coordinate your medical care.  For example, we may disclose Protected Health Information to doctors, nurses, technicians, or other personnel who are involved in taking care of you, including people outside our practice, such as referring or specialist physicians.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">For Payment:</h2>
+          <p class="hipaa-text">We may use and disclose Protected Health Information so that we can bill for the treatment and services you get from us and can collect payment from you, an insurance company, or another third party.  For example, we may need to give your health plan information about your treatment in order for your health plan to pay for that treatment.  We also may tell your health plan about a treatment you are going to receive to find out if your plan will cover the treatment.  If a bill is overdue we may need to give Protected Health Information to a collection agency to the extent necessary to help collect the bill, and we may disclose an outstanding debt to credit reporting agencies.  </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">For Health Care Operations:</h2>
+          <p class="hipaa-text">We may use and disclose Protected Health Information for our health care operations.  For example, we may use Protected Health Information for our general business management activities, for checking on the performance of our staff in caring for you, for our cost-management activities, for audits, or to get legal services.  We may give Protected Health Information to other health care entities for their health care operations, for example, to your health insurer for its quality review purposes.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Appointment Reminders/Treatment Alternatives/Health-Related Benefits and Services</h2>
+          <p class="hipaa-text">We may use and disclose Protected Health Information to contact you to remind you that you have an appointment for medical care, or to contact you to tell you about possible treatment options or alternatives or health related benefits and services that may be of interest to you.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Minors: </h2>
+          <p class="hipaa-text">We may disclose the Protected Health Information of minor children to their parents or guardians unless such disclosure is otherwise prohibited by law. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Personal Representative:</h2>
+          <p class="hipaa-text">If you have a personal representative, such as a legal guardian (or an executor or administrator of your estate after your death), we will treat that person as if that person is you with respect to disclosures of your Protected Health Information. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Research:</h2>
+          <p class="hipaa-text">We may use and disclose your Protected Health Information for research purposes, but we will only do that if the research has been specially approved by an institutional review board or a privacy board that has reviewed the research proposal and has set up protocols to ensure the privacy of your Protected Health Information.  Even without that special approval, we may permit researchers to look at Protected Health Information to help them prepare for research, for example, to allow them to identify patients who may be included in their research project, as long as they do not remove, or take a copy of, any Protected Health Information.  We may use and disclose a limited data set that does not contain specific readily identifiable information about you for research.  But we will only disclose the limited data set if we enter into a data use agreement with the recipient who must agree to (1) use the data set only for the purposes for which it was provided, (2) ensure the security of the data, and (3) not identify the information or use it to contact any individual.
+As Required by Law.  We will disclose Protected Health Information about you when required to do so by international, federal, state, or local law.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">To Avert a Serious Threat to Health or Safety:</h2>
+          <p class="hipaa-text">We may use and disclose Protected Health Information when necessary to prevent a serious threat to your health or safety or to the health or safety of others.  But we will only disclosure the information to someone who may be able to help prevent the threat.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Educational Purposes: </h2>
+          <p class="hipaa-text">We may use your De- identified health information for the purpose of educating staff, students, residents, and other physicians.  You have the right to refuse to allow your de-identified health information to be used for educational purposes.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Medical Residents and Medical Students:</h2>
+          <p class="hipaa-text">Medical residents or medical students may observe or participate in your treatment or use your Protected Health Information to assist in their training.  You have the right to refuse to be examined, observed, or treated by medical residents or medical students.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Business Associates:</h2>
+          <p class="hipaa-text">We may disclose Protected Health Information to our business associates who perform functions on our behalf or provide us with services if the Protected Health Information is necessary for those functions or services.  For example, we may use another company to do our billing, or to provide transcription or consulting services for us.  All of our business associates are obligated, under contract with us, to protect the privacy of your Protected Health Information.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Organ and Tissue Donation:</h2>
+          <p class="hipaa-text">If you are an organ or tissue donor, we may use or disclose your Protected Health Information to organizations that handle organ procurement or transplantation –  such as an organ donation bank – as necessary to facilitate organ or tissue donation and transplantation. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Military and Veterans:</h2>
+          <p class="hipaa-text">If you are a member of the armed forces, we may release Protected Health Information as required by military command authorities.  We also may release Protected Health Information to the appropriate foreign military authority if you are a member of a foreign military.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Workers’ Compensation:</h2>
+          <p class="hipaa-text">We may use or disclose Protected Health Information for workers’ compensation or similar programs that provide benefits for work-related injuries or illness.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Public Health Risks:</h2>
+          <p class="hipaa-text">We may disclose Protected Health Information for public health activities. This includes disclosures to: (1) a person subject to the jurisdiction of the Food and Drug Administration (“FDA”) for purposes related to the quality, safety or effectiveness of an FDA-regulated product or activity; (2) prevent or control disease, injury or disability; (3) report births and deaths; (4) report child abuse or neglect; (5) report reactions to medications or problems with products; (6) notify people of recalls of products they may be using; (7) a person who may have been exposed to a disease or may be at risk for contracting or spreading a disease or condition; and (8) the appropriate government authority if we believe a patient has been the victim of abuse, neglect, or domestic violence and the patient agrees or we are required or authorized by law to make that disclosure.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Health Oversight Activities:</h2>
+          <p class="hipaa-text">We may disclose Protected Health Information to a health oversight agency for activities authorized by law.  These oversight activities include, for example, audits, investigations, inspections, licensure, and similar activities that are necessary for the government to monitor the health care system, government programs, and compliance with civil rights laws.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Lawsuits and Disputes:</h2>
+          <p class="hipaa-text">If you are involved in a lawsuit or a dispute, we may disclose Protected Health Information in response to a court or administrative order. We also may disclose Protected Health Information in response to a subpoena, discovery request, or other legal process from someone else involved in the dispute, but only if efforts have been made to tell you about the request or to get an order protecting the information requested.  We may also use or disclose your Protected Health Information to defend ourselves if you sue us.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Law Enforcement:</h2>
+          <p class="hipaa-text">We may release Protected Health Information if asked by a law enforcement official for the following reasons: in response to a court order, subpoena, warrant, summons or similar process; to identify or locate a suspect, fugitive, material witness, or missing person; about the victim of a crime if; about a death we believe may be the result of criminal conduct; about criminal conduct on our premises; and in emergency circumstances to report a crime, the location of the crime or victims, or the identity, description, or location of the person who committed the crime.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">National Security:</h2>
+          <p class="hipaa-text">We may release Protected Health Information to authorized federal officials for national security activities authorized by law. For example, we may disclose Protected Health Information to those officials so they may protect the President.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Coroners, Medical Examiners, and Funeral Directors:</h2>
+          <p class="hipaa-text">We may release Protected Health Information to a coroner, medical examiner, or funeral director so that they can carry out their duties.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Inmates:</h2>
+          <p class="hipaa-text">If you are an inmate of a correctional institution or under the custody of a law enforcement official, we may disclose Protected Health Information to the correctional institution or law enforcement official if the disclosure is necessary (1) for the institution to provide you with health care; (2) to protect your health and safety or the health and safety of others; or (3) the safety and security of the correctional institution.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Uses and Disclosures That Require Us to Give You an Opportunity to Object and Opt Out Individuals Involved in Your Care or Payment for Your Care:</h2>
+          <p class="hipaa-text">We may disclose Protected Health Information to a person who is involved in your medical care or helps pay for your care, such as a family member or friend, to the extent it is relevant to that person’s involvement in your care or payment related to your care.  But before we do that, we will provide you with an opportunity to object to and opt out of such a disclosure whenever we practicably can do so.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Disaster Relief:</h2>
+          <p class="hipaa-text">We may disclose your Protected Health Information to disaster relief organizations that seek your Protected Health Information to coordinate your care, or notify family and friends of your location or condition in a disaster.  We will provide you with an opportunity to agree or object to such a disclosure whenever we practicably can do so.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Your Written Authorization is Required for Other Uses and Disclosures</h2>
+          <p class="hipaa-text">Other uses and disclosures of Protected Health Information not covered by this Notice or the laws that apply to us will be made only with your written authorization.  If you do give us an authorization, you may revoke it at any time by submitting a written revocation to our Privacy Officer and we will no longer disclose Protected Health Information under the authorization.  But disclosure that we made in reliance on your authorization before you revoked it will not be affected by the revocation.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Special Protections for HIV, Alcohol and Substance Abuse, Mental Health, and Genetic Information</h2>
+          <p class="hipaa-text">Special privacy protections apply to HIV-related information, alcohol and substance abuse, mental health, and genetic information.  Some parts of this general Notice of Privacy Practices may not apply to these kinds of Protected Health Information.  Please check with our Privacy Officer for information about the special protections that do apply.  For example, if we give you a test to determine if you have been exposed to HIV, we will not disclose the fact that you have taken the test to anyone without your written consent unless otherwise required by law.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Your Rights Regarding Your Protected Health Information </h2>
+          <p class="hipaa-text">You have the following rights, subject to certain limitations, regarding your Protected Health Information:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Right to Inspect and Copy:</h2>
+          <p class="hipaa-text">You have the right to inspect and copy Protected Health Information that may be used to make decisions about your care or payment for your care.  But you do not have a right to inspect or copy psychotherapy notes.  We may charge you a fee for the costs of copying, mailing or other supplies associated with your request.  We may not charge you a fee if you need the information for a claim for benefits under the Social Security Act or any other state or federal needs-based benefit program.  We may deny your request in certain limited circumstances.  If we do deny your request, you have the right to have the denial reviewed by a licensed healthcare professional who was not directly involved in the denial of your request, and we will comply with the outcome of the review.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Right to an Electronic Copy of Electronic Medical Records:</h2>
+          <p class="hipaa-text">If your Protected Health Information is maintained in an electronic format (known as an electronic medical record or an electronic health record), you have the right to request that an electronic copy of your record be given to you or transmitted to another individual or entity.  We may charge you a reasonable, cost-based fee for the labor associated with transmitting the electronic medical record.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Right to Get Notice of a Security Breach:</h2>
+          <p class="hipaa-text">We are required to notify you by first class mail or by e-mail (if you have indicated a preference to receive information by e-mail), of any breach of your Unsecured Protected Health Information as soon as possible, but in any event, no later than 60 days after we discover the breach.  “Unsecured Protected Health Information” is Protected Health Information that has not been made unusable, unreadable, and undecipherable to unauthorized users.  The notice will give you the following information:</p>
+          <ul>
+            <li class="hipaa-text">a short description of what happened, the date of the breach and the date it was discovered;</li>
+            <li class="hipaa-text">the steps you should take to protect yourself from potential harm from the breach;</li>
+            <li class="hipaa-text">the steps we are taking to investigate the breach, mitigate losses, and protect against further breaches;</li>
+            <li class="hipaa-text">contact information where you can ask questions and get additional information.</li>
+          </ul>
+          <p class="hipaa-text">If the breach involves 10 or more patients whose contact information is out of date we will post a notice of the breach on our website or in a major print or broadcast media. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Right to Request Amendments:</h2>
+          <p class="hipaa-text">If you feel that Protected Health Information we have is incorrect or incomplete, you may ask us to amend the information.  You have the right to request an amendment for as long as the information is kept by or for us.   A request for amendment must be made in writing to the Privacy Officer at the address provided at the beginning of this Notice and it must tell us the reason for your request.  We may deny your request if it is not in writing or does not include a reason to support the request.  In addition, we may deny your request if you ask us to amend information that (1) was not created by us, (2) is not part of the medical information kept by or for us, (3) is not information that you would be permitted to inspect and copy, or (2) is accurate and complete.  If we deny your request, you may submit a written statement of disagreement of reasonable length.  Your statement of disagreement will be included in your medical record, but we may also include a rebuttal statement.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Right to an Accounting of Disclosures:</h2>
+          <p class="hipaa-text"> You have the right to ask for an “accounting of disclosures,” which is a list of the disclosures we made of your Protected Health Information.  We are not required to list certain disclosures, including (1) disclosures made for treatment, payment, and health care operations purposes, (unless the disclosures were made through an electronic medical record, in which case you have the right to request an accounting of those disclosures that were made during the 3 years before your request), (2) disclosures made with your authorization, (3) disclosures made to create a limited data set, and (4) disclosures made directly to you.  You must submit your request in writing to our Privacy Officer.  Your request must state a time period which may not be longer than 6 years before your request.  Your request should indicate in what form you would like the accounting (for example, on paper or by e-mail).  The first accounting of disclosures you request within any 12-month period will be free.  For additional requests within the same period, we may charge you for the reasonable costs of providing the accounting.  We will tell what the costs are, and you may choose to withdraw or modify your request before the costs are incurred.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Right to Request Restrictions:</h2>
+          <p class="hipaa-text"> You have the right to request a restriction or limitation on the Protected Health Information we use or disclose for treatment, payment, or health care operations.  You also have the right to request a limit on the Protected Health Information we disclose about you to someone who is involved in your care or the payment for your care, like a family member or friend.  We are not required to agree to your request.  If we agree, we will comply with your request unless we terminate our agreement or the information is needed to provide you with emergency treatment.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Out-of-Pocket-Payments:</h2>
+          <p class="hipaa-text">If you paid out-of-pocket in full for a specific item or service, you have the right to ask that your Protected Health Information with respect to that item or service not be disclosed to a health plan for purposes of payment or health care operations, and we will honor that request. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Right to Request Confidential Communications:</h2>
+          <p class="hipaa-text">You have the right to request that we communicate with you only in certain ways to preserve your privacy.  For example, you may request that we contact you by mail at a special address or call you only at your work number.  Your must make any such request in writing and you must specify how or where we are to contact you.  We will accommodate all reasonable requests.  We will not ask you the reason for your request.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Right to a Paper Copy of This Notice</h2>
+          <p class="hipaa-text">You have the right to a paper copy of this Notice, even if you have agreed to receive this Notice electronically.  You may request a copy of this Notice at any time.  You can get a copy of this Notice by contacting our Privacy Officer.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">How to Exercise Your Rights:</h2>
+          <p class="hipaa-text">To exercise your rights described in this Notice, send your request, in writing, to our Privacy Officer at the address listed at the beginning of this Notice.  We may ask you to fill out a form that we will supply.  To exercise your right to inspect and copy your Protected Health Information, you may also  contact your physician directly.  To get a paper copy of this Notice, contact our Privacy Officer by phone or mail.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Changes To This Notice:</h2>
+          <p class="hipaa-text">The effective date of the Notice is stated at the beginning.  We reserve the right to change this Notice.  We reserve the right to make the changed Notice effective for Protected Health Information we already have as well as for any Protected Health Information we create or receive in the future.  A copy of our current Notice is posted in our office and on our website.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hipaa-content">
+          <h2 class="hipaa-text-bold">Complaints:</h2>
+          <p class="hipaa-text">If you believe your privacy rights have been violated, you may file a complaint with us or with the Secretary of the United States Department of Health and Human Services.</p>
+          <p class="hipaa-text">To file a complaint with us, contact our Privacy Officer at the address listed at the beginning of this Notice.  All complaints must be made in writing and should be submitted within 180 days of when you knew or should have known of the suspected violation.  There will be no retaliation against you for filing a complaint. </p>
+          <p class="hipaa-text">To file a complaint with the Secretary, mail it to:   Secretary of the U.S. Department of Health and Human Services, 200 Independence Ave, S.W., Washington, D.C. 20201.  Call  (202) 619-0257 (or toll free (877) 696-6775) or go to the website of the Office for Civil Rights, www.hhs.gov/ocr/hipaa/, for more information. There will be no retaliation against you for filing a complaint.</p>
+        </div>
+      </div>
+      <div class="footer"><!--== Start Footer ==-->
+        <div class="row">
+          <div class="col-xl-8 col-lg-12">
+            <div class="row footer-center">
+              <div class="footer-links">
+                <ul class="footer-list">
+                  <li class="footer-list-element"><a href="sitemap.html">Site Map</a></li>
+                  <li class="footer-list-element"><a href="hipaa.html">HIPAA</a></li>
+                  <li class="footer-list-element"><a href="privacy.html">Privacy Policy</a></li>
+                  <li class="footer-list-element"><a href="terms.html">Terms</a></li>
+                  <li class="footer-list-element"><a href="contact.html">Contact Us</a></li>
+
+
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="footer-img-holder">
+                <a href="https://www.bbb.org/chattanooga/business-reviews/medical-imaging-services/tennessee-interventional-and-imaging-associates-pllc-in-chattanooga-tn-40103607" target="_blank"><img class="img-bbb" src="img/footer-acc.png" alt="Better Business Bureau Accredited Business"></a>
+                <iframe class="img-facebook" title="Like Tennessee Interventional and Imaging Associates on facebook"  title="Like Tennessee Interventional and Imaging Associates on facebook"  src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftiiarad&width=122&layout=button&action=like&size=large&show_faces=false&share=true&height=65&appId"
+                        width="122" height="65" >
+                </iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 map-holder"> <!--== Start Map ==-->
+            <div id="map"></div>
+              <script>
+                function initMap() {
+                  // Styles a map in night mode.
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: 35.0475311, lng: -85.2917063},
+                    zoom: 16,
+                    styles: [
+                      {
+                        featureType: 'all',
+                        elementType: 'all',
+                        stylers: [{saturation: '0'}, {hue: '#e7ecf0'}]
+                      },
+                      {
+                        featureType: 'road',
+                        elementType: 'all',
+                        stylers: [{saturation: '-70'}]
+                      },
+                      {
+                        featureType: 'transit',
+                        elementType: 'all',
+                        stylers: [{visibility: 'off'}]
+                      },
+                      {
+                        featureType: 'poi',
+                        elementType: 'all',
+                        stylers: [{visibility: 'off'}]
+                      },
+                      {
+                        featureType: 'water',
+                        elementType: 'all',
+                        stylers: [{visibility: 'simplified'}, {saturation: '-60'}]
+                      }
+                    ]
+                  });
+                  var marker = new google.maps.Marker({
+                    position: {lat: 35.0481695, lng: -85.2908826},
+                    map: map
+                  });
+                }
+              </script>
+              <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFQtcIUDGXCzFWhnaey32gE_n6OB0fAaY&callback=initMap" async defer></script>
+            </div><!--== End Map ==-->
+          </div>
+      </div><!--== End Footer ==-->
+  </div><!--== Ends Container Fluid ==-->
+<script>
+  jQuery('.menu-icon').click(function() {
+    jQuery(this).toggleClass('opened');
+  });
+</script>
+</body>
+</html>
